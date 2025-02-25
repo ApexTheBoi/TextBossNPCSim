@@ -3,7 +3,7 @@ public class Main
 {
 	public static void main(String[] args) {
 	    
-	    Boss boss = new Boss("Valenthia",10000,"The Highfight Catacombs");
+	    Boss boss = new Boss("Valenthia",10000,"The Highrise Pantheon");
 	    int playerCount;
 	    
 	    Player p1 = new Player("Eleia Frostkiss", 100, "White Mage");
@@ -31,6 +31,7 @@ public class Main
 	    System.out.println("Your party is listed below: ");
 	    System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - -");
 	    
+	    //Loop printing all the party members in order.
 	    for(int i = 0; i < party.size(); i++){
 	        System.out.println(party.get(i));
 	        if(i != party.size()-1){
@@ -46,5 +47,16 @@ public class Main
 	    System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - -");
 	    System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - -");
 	    
+	    boss.swipe();
+	    
+	    System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - -");
+	    System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - -");
+	    
+	    boss.leap();
+	    
+	    System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - -");
+	    System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - -");
+	    
+	    boss.enrage();
 	}
 }
