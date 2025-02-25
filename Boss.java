@@ -94,10 +94,10 @@ public class Boss{
         for(int i = 1; i < 11; i++){
         System.out.println( "(" + (10-i) + " Seconds to execution.)");
         try {
-            Thread.sleep(1000); // Sleep for 2 seconds
+            Thread.sleep(1000); // Sleep for 1 second
         } 
         catch (InterruptedException e) {
-            e.printStackTrace(); // Handle the interruption
+            e.printStackTrace();
         }
         }
         System.out.println("Party has wiped. Game Over.");
