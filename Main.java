@@ -10,7 +10,7 @@ public class Main
 	    Player p2 = new Player("Derek Darkheart", 150, "Brute");
 	    Player p3 = new Player("Liliana Breezeborne",100,"Wind Mage");
 	    Player p4 = new Player("Hubert Lightstream", 100, "Viper");
-	    Player p5 = new Player("Carl Molia",100,"Monk");
+	    Player p5 = new Player("Card Molia",100,"Monk");
 	    Player p6 = new Player("Irudia Uniqia",150,"Gunbreaker");
 	    Player p7 = new Player("Julia Hindsneer",80,"Glass Cannon");
 	    Player p8 = new Player("Hephaistos Wyrmbound",100,"Fire Thrower");
@@ -27,6 +27,8 @@ public class Main
 	    party.add(p8);
 	    
 	    playerCount = party.size();
+	    
+	    boss.setPartyList(party);
 	    
 	    System.out.println("Your party is listed below: ");
 	    System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - -");
@@ -53,6 +55,11 @@ public class Main
 	    System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - -");
 	    
 	    boss.leap();
+	    
+	    System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - -");
+	    System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - -");
+	    
+	    boss.cleave(3); //note you can change the parameter to whatever number you want that's less than or equal to playercount
 	    
 	    System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - -");
 	    System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - -");
